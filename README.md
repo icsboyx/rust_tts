@@ -31,7 +31,7 @@ This is a simple Rust application that converts text into speech using Google Tr
 ## Configuration
 The application uses Google Translate's TTS service for audio generation. If you encounter issues or want to customize the service, refer to the tts.rs module.
 
-    ``rust
+    ```rust
     let tts_lang = "it"; // default language
     let tts_slow = "false"; // default fast
     let tts_tld = "it"; // default top domain (TLD) 
