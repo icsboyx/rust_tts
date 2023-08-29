@@ -97,6 +97,7 @@ dependencies = [
  "itertools",
  "reqwest",
  "rodio",
+ "soloud",
  "ureq",
  "urlencoding",
 ]
@@ -246,6 +247,15 @@ name = "claxon"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4bfbf56724aa9eca8afa4fcfadeb479e722935bb2a0900c2d37e0cc477af0688"
+
+[[package]]
+name = "cmake"
+version = "0.1.50"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a31c789563b815f77f4250caee12365734369f942439b7defd71e18a48197130"
+dependencies = [
+ "cc",
+]
 
 [[package]]
 name = "colored"
@@ -1140,6 +1150,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "paste"
+version = "1.0.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
+
+[[package]]
 name = "peeking_take_while"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1494,6 +1510,24 @@ checksum = "2538b18701741680e0322a2302176d3253a35388e2e62f172f64f4f16605f877"
 dependencies = [
  "libc",
  "windows-sys",
+]
+
+[[package]]
+name = "soloud"
+version = "1.0.5"
+source = "git+https://github.com/moalyousef/soloud-rs#6d0d2d492da21ba0c30f9a35f2213c76493d4f7d"
+dependencies = [
+ "bitflags 2.4.0",
+ "paste",
+ "soloud-sys",
+]
+
+[[package]]
+name = "soloud-sys"
+version = "1.0.5"
+source = "git+https://github.com/moalyousef/soloud-rs#6d0d2d492da21ba0c30f9a35f2213c76493d4f7d"
+dependencies = [
+ "cmake",
 ]
 
 [[package]]

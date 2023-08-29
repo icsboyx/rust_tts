@@ -4,7 +4,7 @@ use urlencoding::encode;
 
 pub fn tts(payload: String) -> std::vec::Vec<u8> {
     let tts_text = if payload.is_empty() {
-        "Che fai mi mandi una stringa vuota?"
+        "Che fai? Mi mandi una stringa vuota?"
     } else {
         payload.as_str()
     };
