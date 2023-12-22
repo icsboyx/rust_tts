@@ -17,26 +17,25 @@ This is a simple Rust application that converts text into speech using Google Tr
 ## Usage
 
 1. Clone this repository:
-
-   ```sh
+```sh
    git https://github.com/icsboyx/rust_tts.git
    cd rust-tts-app
-   ```
+```
    
 2. Build and run the application:
-    ```sh
+```sh
     cargo build; cargo run
-    ```
+```
 3. Follow the on-screen instructions to input text for text-to-speech conversion. Press Ctrl+C to terminate the application.
 
 ## Configuration
 The application uses Google Translate's TTS service for audio generation. If you encounter issues or want to customize the service, refer to the tts.rs module.
 
-    ```Rust
+```Rust
     let tts_lang = "it"; // default language
     let tts_slow = "false"; // default fast
     let tts_tld = "it"; // default top domain (TLD) 
-    ```
+```
 
 ### Contribution
 Contributions are welcome! If you find a bug or want to add new features, feel free to create a pull request.
